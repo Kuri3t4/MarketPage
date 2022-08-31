@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(125deg, rgb(230, 63, 188), rgb(3, 153, 190));
+}
+@keyframes queda {
+    from {
+        transform: translate(0%, -100vh);
+    }
+    to {
+        transform: translate(0%, 0%);
+    }
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: queda 2s normal both 500ms;
+    transition: 3s;
+}
+.imagem {
+    height: 60vh;
+    width: 60vh;
+    background-color: blue;
+    background-color: transparent;
+    box-shadow: -5px 5px 10px #252525;
+}
+.texto {
+    height: 60vh;
+    width: 40vh;
+    background-color: transparent;
+    box-shadow: 5px 5px 10px #252525;
+}
+@keyframes coming {
+    from {
+        transform: translate(-40vw, 32vh);
+        opacity: 0%;
+    }
+    to {
+        transform: translate(-20.6vw, 32vh);
+    }
+}
+@keyframes coming2 {
+    0% {
+        transform: translate(40vw, 32vh);
+        opacity: 0%;
+    }
+    100% {
+        transform: translate(20.6vw, 32vh);
+    }
+}
+#btn1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3vh;
+    position: absolute;
+    transform: translate(-20.6vw, 32vh);
+    padding: 2vh 3vw;
+    animation: coming 1.6s normal both 500ms;
+    font-weight: 900;
+}
+#btn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3vh;
+    position: absolute;
+    transform: translate(20.6vw, 32vh);
+    padding: 2vh 3vw;
+    animation: coming2 1.6s normal both 500ms;
+    font-weight: 900;
+}
+.btn {
+    margin-top: 2vh;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.img {
+    height: 55vh;
+    width: 28vw;
+    margin-top: 2vh;
+    margin-left: .6vw;
+}
+.cafeteira {
+    color: white;
+    margin-top: 10vh;
+    margin-left: 25.2%;
+}
+.cafedesc {
+    color: white;
+    margin-top: 2vh;
+    margin-left: 1vw;
+}
+#btn1:active {
+    box-shadow: inset 3px -3px 10px;
+    font-weight: 500;
+    height: 1vh;
+    padding: 1.8vh 2.8vw;
+}
+#btn2:active {
+    box-shadow: inset -3px -3px 10px;
+    font-weight: 500;
+    height: 1vh;
+    padding: 1.8vh 2.8vw;
+}
+/* Para style do JS */
+.margin1 {
+    margin-left: 24.5%;
+}
+.margin2 {
+    margin-left: 21%;
+}
+.margin3 {
+    margin-left: 3.7vw;
+}
+/* Fechado style do JS */
